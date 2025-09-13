@@ -1,54 +1,64 @@
 # Usage Guide
 
-This document explains how to use and customize projects created from this template repository.
+This document explains how to set up and run the backend locally.
 
-## How to Use This Template
+---
 
-1. **Create a new repository from the template.**
+## Prerequisites
 
-   - Follow the setup instructions in `docs/setup.md`.
+- Node.js (v20 or later)
+- npm (comes with Node.js)
+- MongoDB (local or Atlas connection)
 
-2. **Customize your project.**
+---
 
-   - Update project details in `README.md`.
-   - Add your source code, assets, and documentation.
-   - Remove or update template files as needed.
+## Running Locally
 
-3. **Document your changes.**
-   - Use `CHANGELOG.md` to track updates.
-   - Add screenshots or diagrams to `docs/images/` for documentation.
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/OpenCodeChicago/hacktoberfest-2025-backend.git
+   cd hacktoberfest-2025-backend
+   ```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+3. **Set up environment variables**
+   Create a `.env` file in the project root:
+   ```bash
+   PORT=5000
+   # Local MongoDB
+   MONGODB_URI=mongodb://localhost:27017/hacktoberfest
+   # or MongoDB Atlas
+   # MONGODB_URI=mongodb+srv://<user>:<password>@cluster.mongodb.net/hacktoberfest
+   ```
+4. **Start the server**
+   ```bash
+   npm run dev
+   ```
+   By default the API will be available at `http://localhost:5000`
 
-## Tips for Customization
+---
 
-- Update or remove example documentation files (`setup.md`, `usage.md`, `faq.md`) to fit your project.
-- Add new documentation files to the `docs/` folder as your project grows.
-- Keep your documentation up to date for easier collaboration and maintenance.
+## Project Scripts
+
+- `npm run dev` → start server with auto-reload (Nodemon)
+- `npm run start` → start production server
+- `npm run lint` → run ESLint checks
+- `npm run test` → run tests (if available)
 
 ---
 
 ## Using Docker
 
-This template includes a `Dockerfile` and `.dockerignore` for easy containerization.
-
-### Build and Run with Docker
-
-1. **Build the Docker image:**
-   ```sh
-   docker build -t my-app .
+1. **Build the image**
+   ```bash
+   docker build -t hacktoberfest-backend .
    ```
-2. **Run the container:**
-
-   ```sh
-   # Interactive mode (for development/debugging)
-   docker run -it --rm -p 3000:3000 my-app
-
-   # Detached mode (for background/production use)
-   docker run -d --rm -p 3000:3000 my-app
+2. **Run the container**
+   ```bash
+   docker run -d -p 5000:5000 --env-file .env hacktoberfest-backend
    ```
-
-You can customize the `Dockerfile` to fit your stack (Node.js, React, etc.).
-
-Refer to the `Dockerfile` for details and adjust exposed ports or environment variables as needed.
 
 ---
 
@@ -56,4 +66,19 @@ Refer to the `Dockerfile` for details and adjust exposed ports or environment va
 
 ---
 
-Feel free to expand this guide with project-specific usage instructions!
+## Workflow for Contributing
+
+1. Fork this repository
+2. Create a new branch for your feature or fix
+3. Commit your changes
+4. Open a Pull Request (PR) with a clear description of what you did
+
+For more details, see [CONTRIBUTING.md](../CONTRIBUTING.md)
+
+---
+
+## Troubleshooting
+
+- If you see an error like **command not found: npm**, make sure **Node.js** and **npm** are installed.
+- If the dev server doesn’t start, try deleting `node_modules` and `package-lock.json`, then run `npm install` again.
+- Still stuck? Ask in [main Hacktoberfest Discussion](https://github.com/orgs/OpenCodeChicago/discussions/2) or on [Discord](https://discord.gg/t6MGsCqdFX)
