@@ -1,26 +1,35 @@
 # Frequently Asked Questions (FAQ)
 
-## What is this template repository for?
+## What is this repository for?
+This is the **backend service** for the Hacktoberfest 2025 project, built with Node.js, Express, and MongoDB (via Mongoose).
 
-This is a **project template** repository for Open Code Chicago.
-It provides a starting structure and recommended practices for new projects (open-source or internal).
-
-## How do I use this template?
-
-See `docs/setup.md` and `docs/usage.md` for instructions on creating and customizing a new project.
-
-## Can I remove or edit the template files?
-
-Yes! Feel free to update, remove, or add files to fit your project's needs.
-
-## What should I do with the documentation files?
-
-Update them with project-specific information or delete them if not needed.
-
-## Who maintains this template?
-
-This template is maintained by @Alexandrbig1. For feedback or suggestions, email us: 📧 info@opencodechicago.org
+It provides the REST API that powers the frontend.
 
 ---
 
-Feel free to add more questions and answers as needed!
+## How do I run the backend locally?
+See the [Usage Guide](./usage.md) for detailed setup instructions.
+
+---
+
+## What database is used?
+We use **MongoDB**.  
+You can connect to a local MongoDB instance or use a hosted MongoDB Atlas cluster.
+
+---
+
+## Do I need Docker to run this?
+No — Docker is optional. You can run locally with Node.js, or use Docker for an isolated environment.  
+See the [Usage Guide](./usage.md#using-docker) for details.
+
+---
+
+## How are contributions recognized?
+We use the [All Contributors](https://allcontributors.org) bot.  
+See [Contributing](../CONTRIBUTING.md) for how to add yourself.
+
+---
+
+## Who maintains this project?
+Maintained by the **Open Code Chicago** community.  
+For questions, open a GitHub Discussion or contact us: [info@opencodechicago.org](mailto:info@opencodechicago.org).
