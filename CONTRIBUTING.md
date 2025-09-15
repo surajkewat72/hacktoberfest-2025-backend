@@ -12,6 +12,16 @@ We welcome contributions of all skill levels.
 
 ---
 
+## Before You Start
+- Please read our [Code of Conduct](./CODE_OF_CONDUCT.md)  
+- Review our [Usage Guide](./docs/usage.md) to set up the backend locally  
+- Check [open issues](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/issues) for available work  
+- Review our [Project Board](https://github.com/orgs/OpenCodeChicago/projects/2) to see **assigned tasks**  
+  - Comment on a task you’d like to work on so a maintainer can assign it to you  
+  - This prevents duplicate work and keeps efforts coordinated  
+
+---
+
 ## How to Contribute
 1. Fork the repository and create a new branch  
    - Suggested naming: `feature/your-feature`, `fix/your-bug`  
