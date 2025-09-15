@@ -23,20 +23,20 @@ Contribute to real-world open source code, learn backend development, and collab
 
 ## Table of Contents
 
-- [Description](#-description)
-- [Who is this for?](#-who-is-this-for)
-- [Tech Stack](#-tech-stack)
-- [Quick Start](#-quick-start)
-- [Features](#-features)
-- [Project Structure](#-project-structure)
-- [Contributing](#-contributing)
-- [Hacktoberfest Contribution Guide](#-hacktoberfest-contribution-guide)
-- [Documentation](#-documentation)
-- [Contributors](#-contributors)
-- [License](#-license)
-- [Feedback](#-feedback)
-- [Support](#-support)
-- [Connect with us](#-connect-with-us)
+- [Description](#description)
+- [Who is this for?](#who-is-this-for)
+- [Tech Stack](#tech-stack)
+- [Quick Start](#quick-start)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [Hacktoberfest Contribution Guide](#hacktoberfest-contribution-guide)
+- [Documentation](#documentation)
+- [Contributors](#contributors)
+- [License](#license)
+- [Feedback](#feedback)
+- [Support](#support)
+- [Connect with us](#connect-with-us)
 
 ---
 
