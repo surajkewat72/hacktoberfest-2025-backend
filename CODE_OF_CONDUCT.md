@@ -23,7 +23,11 @@ Project maintainers are responsible for clarifying standards and taking appropri
 This Code of Conduct applies in all community spaces and when representing the project.
 
 ## Enforcement
-Instances of abusive or unacceptable behavior may be reported by contacting the maintainers at **info@opencodechicago.org**. All complaints will be reviewed and handled with discretion.
+Instances of abusive or unacceptable behavior may be reported by contacting the maintainers:  
+
+📧 **info@opencodechicago.org**  
+
+All complaints will be reviewed and handled with discretion.
 
 ## Attribution
 This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version 2.1.
