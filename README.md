@@ -137,9 +137,10 @@ Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to 
    git checkout -b my-new-feature
    ```
 3. Make your changes (small, clear commits)
-4. Run npm run lint before pushing
+4. Run `npm run lint` before pushing
 5. Open a Pull Request
-   Tip: Start with [Good First Issues](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/labels/good%20first%20issue)
+   - All PRs are automatically checked for linting in CI
+   - Tip: Start with [Good First Issues](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/labels/good%20first%20issue)
 
 ---
 
