@@ -67,7 +67,7 @@ New contributors can help with APIs, database models, and documentation.
 ---
 
 
-## 🚀 Quick Start
+## Quick Start
 
 See the [Usage Guide](docs/usage.md) for full setup.
 
