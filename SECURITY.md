@@ -8,7 +8,11 @@ We release patches and security updates for the following versions:
 | main    | ✅ (active)        |
 
 ## Reporting a Vulnerability
-If you discover a security vulnerability, please do not open a public issue.  
-Instead, report it privately by emailing us at **info@opencodechicago.org**.  
+If you discover a security vulnerability, **please do not open a public issue or pull request.**  
 
-We will review and respond as quickly as possible. Responsible disclosure is greatly appreciated.  
+Instead, report it privately by emailing us at:  
+
+📧 **info@opencodechicago.org**  
+
+We will review and respond within **7 business days**.  
+Responsible disclosure is greatly appreciated, and we will keep you updated on our progress.  
