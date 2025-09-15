@@ -1,19 +1,28 @@
 # Hacktoberfest 2025 – Backend
 
-<img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
+<img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="120"/>
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/OpenCodeChicago/hacktoberfest-2025-backend)](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/commits/main)
-[![CI](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/actions/workflows/ci.yml/badge.svg?style=for-the-badge)](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/github/license/OpenCodeChicago/hacktoberfest-2025-backend)](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/blob/main/LICENSE)
+[![CI](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/actions/workflows/ci.yml/badge.svg)](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/github/license/OpenCodeChicago/hacktoberfest-2025-backend)](LICENSE)
 [![Open Issues](https://img.shields.io/github/issues/OpenCodeChicago/hacktoberfest-2025-backend)](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/OpenCodeChicago/hacktoberfest-2025-backend)](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/pulls)
 [![Contributors](https://img.shields.io/github/contributors/OpenCodeChicago/hacktoberfest-2025-backend)](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/graphs/contributors)
-[![GitHub stars](https://img.shields.io/github/stars/OpenCodeChicago/hacktoberfest-2025-backend?style=for-the-badge)](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/OpenCodeChicago/hacktoberfest-2025-backend?style=for-the-badge)](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/OpenCodeChicago/hacktoberfest-2025-backend?style=flat-square)](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/stargazers)
+
+---
+
+## Welcome Hacktoberfest Contributors!
+
+This repo is part of [Open Code Chicago](https://opencodechicago.org)’s Hacktoberfest 2025 initiative.  
+Whether it’s your **first pull request** or your **50th**, you are welcome here!
+
+Contribute to real-world open source code, learn backend development, and collaborate with a global community.
 
 ---
 
 ## Table of Contents
+
 - [Description](#-description)
 - [Who is this for?](#-who-is-this-for)
 - [Tech Stack](#-tech-stack)
@@ -21,6 +30,7 @@
 - [Features](#-features)
 - [Project Structure](#-project-structure)
 - [Contributing](#-contributing)
+- [Hacktoberfest Contribution Guide](#-hacktoberfest-contribution-guide)
 - [Documentation](#-documentation)
 - [Contributors](#-contributors)
 - [License](#-license)
@@ -32,31 +42,33 @@
 
 ## Description
 
-This is the **backend template** for [Open Code Chicago](https://opencodechicago.org)’s Hacktoberfest 2025 project.  
-It’s designed for **community collaboration** and provides a structured way for developers of all levels to contribute.  
+This is the **backend template** for Hacktoberfest 2025.  
+It’s built with Node.js & Express.js, and set up for **easy contributions, testing, and collaboration**.  
 
 ---
 
 ## Who is this for?
 
-- Beginners looking to make their **first open source contribution**  
-- Intermediate developers who want to learn **Node js, Express js, and backend best practices**  
-- Experienced contributors mentoring and guiding others  
+- Beginners making their **first open source contribution**  
+- Intermediate devs learning **Node.js, Express.js, REST APIs**  
+- Experienced contributors who want to **mentor others**  
 
 ---
 
 ## Tech Stack
 
-- **Node js** (with Vite for fast dev/build)
-- **Express js** (for type safety and scalability)
-- **ESLint + Prettier** (code style and linting)
-- **GitHub Actions** (CI/CD with tests and builds)
+- **Node.js** – runtime  
+- **Express.js** – server framework  
+- **ESLint + Prettier** – linting & formatting  
+- **Jest / Supertest** – (optional) testing  
+- **GitHub Actions** – CI/CD pipelines  
 
 ---
 
-## Quick Start
 
-See the [Usage Guide](docs/usage.md) for detailed setup.
+## 🚀 Quick Start
+
+See the [Usage Guide](docs/usage.md) for full setup.
 
 ```bash
 # Clone the repo
@@ -78,35 +90,55 @@ npm run dev
 
 ## Features
 
-- Developer-friendly setup with Vite
-- Preconfigured linting & formatting
-- Ready-to-use GitHub Actions for CI/CD
-- Community-driven with **issues & PR templates**
+- Simple **Express.js backend** ready to extend
+- Developer-friendly setup
+- Preconfigured **linting & formatting**
+- GitHub Actions for **CI/CD**
+- Open for **community collaboration**
 
 ---
 
 ## Project Structure
 
-.
+```bash
+hacktoberfest-2025-backend/
 ├── .github/              # Workflows, templates, CODEOWNERS
 │   ├── ISSUE_TEMPLATE/
 │   ├── workflows/
 │   └── ...
 ├── docs/                 # Usage guide, FAQ
-├── src/                  # React source code (main.jsx, components, etc.)
+├── src/                  # Backend source code
+│   ├── server.js         # Server entry
+│   └── routes/           # Example routes
+├── .eslintrc             # ESLint config
 ├── .prettierrc           # Prettier config
-├── CONTRIBUTING.md        # How to contribute
-├── CODE_OF_CONDUCT.md     # Code of conduct
-├── SECURITY.md            # Security policy
-├── LICENSE                # MIT License
-└── README.md              # This file
+├── CONTRIBUTING.md       # How to contribute
+├── CODE_OF_CONDUCT.md    # Code of conduct
+├── SECURITY.md           # Security policy
+├── LICENSE               # MIT License
+└── README.md             # This file
+```
 
 ---
 
 ## Contributing
 
-We welcome contributions from everyone!
+We welcome contributions from **everyone**!
 Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to get started.  
+
+---
+
+## Hacktoberfest Contribution Guide
+
+1. Fork this repository
+2. Create a new branch:
+   ```bash
+   git checkout -b my-new-feature
+   ```
+3. Make your changes (small, clear commits)
+4. Run npm run lint before pushing
+5. Open a Pull Request
+   Tip: Start with [Good First Issues](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/labels/good%20first%20issue)
 
 ---
 
