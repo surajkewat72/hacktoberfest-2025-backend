@@ -42,8 +42,9 @@ Contribute to real-world open source code, learn backend development, and collab
 
 ## Description
 
-This is the **backend template** for Hacktoberfest 2025.  
-It’s built with Node.js & Express.js, and set up for **easy contributions, testing, and collaboration**.  
+This is the **backend project** for Hacktoberfest 2025.  
+It’s built with **Node.js, Express.js, and MongoDB**, and set up for **easy contributions, testing, and collaboration**.  
+New contributors can help with APIs, database models, and documentation.
 
 ---
 
