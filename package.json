@@ -1,0 +1,51 @@
+{
+  "name": "hacktoberfest-2025-backend",
+  "version": "1.0.0",
+  "description": "Open Code Chicago's official backend project for Hacktoberfest 2025. Open source, community-driven, and welcoming contributions from everyone.",
+  "homepage": "https://github.com/OpenCodeChicago/hacktoberfest-2025-backend",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenCodeChicago/hacktoberfest-2025-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/issues"
+  },
+  "contributors": [
+    {
+      "name": "Open Code Chicago Team",
+      "email": "info@opencodechicago.org"
+    }
+  ],
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "hacktoberfest",
+    "hacktoberfest2025",
+    "backend",
+    "nodejs",
+    "express",
+    "mongoose",
+    "mongodb",
+    "javascript",
+    "open-source",
+    "open-code-chicago",
+    "community"
+  ],
+  "author": "Open Code Chicago",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
