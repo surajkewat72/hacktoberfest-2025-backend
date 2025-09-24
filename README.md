@@ -74,6 +74,7 @@ New contributors can help with APIs, database models, and documentation.
 ---
 
 
+
 ## Quick Start
 
 See the [Usage Guide](docs/usage.md) for full setup.
@@ -93,6 +94,38 @@ npm install
 # Start dev server
 npm run dev
 ```
+
+---
+
+## Local Development Setup
+
+To work on this project locally, follow these steps:
+
+1. **Set up your own MongoDB database**
+  - You can use [MongoDB Atlas](https://www.mongodb.com/atlas/database) (free tier) or run MongoDB locally.
+2. **Copy environment variables**
+  - Copy `.env.example` to `.env`:
+    ```bash
+    cp .env.example .env
+    ```
+  - Fill in your own values for `MONGODB_URI` and other variables in `.env`.
+3. **Seed the database**
+  - Run the seed script to populate your local database with sample data:
+    ```bash
+    npm run seed
+    ```
+4. **Start the development server**
+  - Run:
+    ```bash
+    npm run dev
+    ```
+5. **Lint your code before committing**
+  - Run:
+    ```bash
+    npm run lint
+    ```
+6. **Ready to contribute!**
+  - Pick an issue, create a branch, and start coding.
 
 ---
 
@@ -136,22 +169,25 @@ Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to 
 
 ---
 
+
 ## Hacktoberfest Contribution Guide
 
 1. Fork this repository
-2. Check our [Project Board](https://github.com/orgs/OpenCodeChicago/projects/2)  
-   - Look for an issue you’d like to work on  
-   - Comment on the issue to let others know you’re taking it  
-   - Maintainers may assign you to it (to avoid duplicates)
+2. Check our [Project Board](https://github.com/orgs/OpenCodeChicago/projects/2)
+  - Look for an issue you’d like to work on
+  - Comment on the issue to let others know you’re taking it
+  - Maintainers may assign you to it (to avoid duplicates)
 3. Create a new branch:
-   ```bash
-   git checkout -b my-new-feature
-   ```
-4. Make your changes (small, clear commits)
-5. Run `npm run lint` before pushing
-6. Open a Pull Request
-   - All PRs are automatically checked for linting in CI
-   - Tip: Start with [Good First Issues](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/labels/good%20first%20issue)
+  ```bash
+  git checkout -b my-new-feature
+  ```
+4. Set up your local environment (see above)
+  - Make sure your `.env` is configured and your database is seeded
+5. Make your changes (small, clear commits)
+6. Run `npm run lint` before pushing
+7. Open a Pull Request
+  - All PRs are automatically checked for linting in CI
+  - Tip: Start with [Good First Issues](https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/labels/good%20first%20issue)
 
 ---
 

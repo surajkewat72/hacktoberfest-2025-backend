@@ -12,6 +12,34 @@ We welcome contributions of all skill levels.
 
 ---
 
+## Local Setup Steps
+
+1. **Set up your own MongoDB database**
+  - Use MongoDB Atlas (free tier) or run MongoDB locally.
+2. **Copy environment variables**
+  - Copy `.env.example` to `.env`:
+    ```bash
+    cp .env.example .env
+    ```
+  - Fill in your own values for `MONGODB_URI` and other variables in `.env`.
+3. **Seed the database**
+  - Run the seed script to populate your local database with sample data:
+    ```bash
+    npm run seed
+    ```
+4. **Start the development server**
+  - Run:
+    ```bash
+    npm run dev
+    ```
+5. **Lint your code before committing**
+  - Run:
+    ```bash
+    npm run lint
+    ```
+
+---
+
 ## Before You Start
 - Please read our [Code of Conduct](./CODE_OF_CONDUCT.md)  
 - Review our [Usage Guide](./docs/usage.md) to set up the backend locally  

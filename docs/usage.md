@@ -24,7 +24,12 @@ This document explains how to set up and run the backend locally.
    npm install
    ```
 3. **Set up environment variables**
-   Create a `.env` file in the project root:
+   Copy `.env.example` to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+   Edit `.env` and fill in your own values for `MONGODB_URI` and other variables.
+   Example:
    ```bash
    PORT=5000
    # Local MongoDB
@@ -32,7 +37,12 @@ This document explains how to set up and run the backend locally.
    # or MongoDB Atlas
    # MONGODB_URI=mongodb+srv://<user>:<password>@cluster.mongodb.net/hacktoberfest
    ```
-4. **Start the server**
+4. **Seed the database**
+   Run the seed script to populate your local database with sample data:
+   ```bash
+   npm run seed
+   ```
+5. **Start the server**
    ```bash
    npm run dev
    ```
