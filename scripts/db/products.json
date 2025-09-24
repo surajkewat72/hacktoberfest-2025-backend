@@ -1,0 +1,16 @@
+[
+  {
+    "name": "CoreX Whey Protein",
+    "price": 49.99,
+    "category": "Protein",
+    "description": "High-quality whey protein for muscle recovery.",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "name": "CoreX Creatine",
+    "price": 24.99,
+    "category": "Creatine",
+    "description": "Boost your performance with pure creatine monohydrate.",
+    "image": "https://via.placeholder.com/200"
+  }
+]
