@@ -1,7 +1,7 @@
 {
   "name": "hacktoberfest-2025-backend",
   "version": "1.0.0",
-  "description": "Open Code Chicago's official backend project for Hacktoberfest 2025. Open source, community-driven, and welcoming contributions from everyone.",
+  "description": "Open Code Chicago's official backend project for for CoreX (Hacktoberfest 2025) - Node + Express + MongoDB. Open source, community-driven, and welcoming contributions from everyone.",
   "homepage": "https://github.com/OpenCodeChicago/hacktoberfest-2025-backend",
   "repository": {
     "type": "git",
@@ -22,8 +22,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "eslint . --ext .js"
   },
   "keywords": [
     "hacktoberfest",
@@ -46,6 +47,7 @@
     "mongoose": "^8.18.2"
   },
   "devDependencies": {
+    "eslint": "^9.36.0",
     "nodemon": "^3.1.10"
   }
 }
