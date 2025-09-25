@@ -7,6 +7,7 @@
     "sale": 25,
     "sizes": ["2lb", "4lb"],
     "new": true,
+    "goals": ["Build Muscle", "Muscle Recovery", "Meal Replacement"],
     "description": "High-quality whey protein for muscle recovery.",
     "image": "https://via.placeholder.com/200"
   },
@@ -18,6 +19,7 @@
     "sale": 0,
     "sizes": ["300g", "500g"],
     "new": false,
+    "goals": ["Athletic Performance", "Build Muscle", "Strength"],
     "description": "Boost your performance with pure creatine monohydrate.",
     "image": "https://via.placeholder.com/200"
   },
@@ -29,6 +31,7 @@
     "sale": 0,
     "sizes": ["30 servings", "60 servings"],
     "new": true,
+    "goals": ["Muscle Recovery", "Intra-Workout", "BCAAs"],
     "description": "Branched-chain amino acids for muscle recovery.",
     "image": "https://via.placeholder.com/200"
   },
@@ -40,6 +43,7 @@
     "sale": 30,
     "sizes": ["60 capsules"],
     "new": true,
+    "goals": ["Weight Loss", "Metabolism", "Energy"],
     "description": "Thermogenic formula for accelerated fat loss.",
     "image": "https://via.placeholder.com/200"
   },
@@ -51,6 +55,7 @@
     "sale": 0,
     "sizes": ["60 tablets"],
     "new": true,
+    "goals": ["Health & Wellness", "Multivitamins", "Joint Health"],
     "description": "Complete daily multivitamin for overall health.",
     "image": "https://via.placeholder.com/200"
   }
