@@ -3,6 +3,10 @@
     "name": "CoreX Whey Protein",
     "price": 49.99,
     "category": "Protein",
+    "flavors": ["Chocolate", "Vanilla", "Strawberry"],
+    "sale": 25,
+    "sizes": ["2lb", "4lb"],
+    "new": true,
     "description": "High-quality whey protein for muscle recovery.",
     "image": "https://via.placeholder.com/200"
   },
@@ -10,7 +14,44 @@
     "name": "CoreX Creatine",
     "price": 24.99,
     "category": "Creatine",
+    "flavors": ["Unflavored"],
+    "sale": 0,
+    "sizes": ["300g", "500g"],
+    "new": false,
     "description": "Boost your performance with pure creatine monohydrate.",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "name": "CoreX BCAA",
+    "price": 19.99,
+    "category": "Aminos",
+    "flavors": ["Watermelon", "Lemon Lime"],
+    "sale": 0,
+    "sizes": ["30 servings", "60 servings"],
+    "new": true,
+    "description": "Branched-chain amino acids for muscle recovery.",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "name": "CoreX Fat Burner",
+    "price": 27.99,
+    "category": "Fat Burner",
+    "flavors": ["Capsule"],
+    "sale": 30,
+    "sizes": ["60 capsules"],
+    "new": true,
+    "description": "Thermogenic formula for accelerated fat loss.",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "name": "CoreX Multivitamin",
+    "price": 14.99,
+    "category": "Vitamins",
+    "flavors": ["Tablet"],
+    "sale": 0,
+    "sizes": ["60 tablets"],
+    "new": true,
+    "description": "Complete daily multivitamin for overall health.",
     "image": "https://via.placeholder.com/200"
   }
 ]
