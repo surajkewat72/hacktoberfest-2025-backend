@@ -111,8 +111,19 @@ If you have questions, ask in your PR or open an issue!
 ---
 
 ## Getting Help
-If you’re stuck or unsure, feel free to reach out:  
+If you’re stuck or unsure:
+- Ask in our [GitHub Discussions](https://github.com/orgs/OpenCodeChicago/discussions/2)  
+- Join our [Discord](https://discord.gg/t6MGsCqdFX)  
+- Or email us at [info@opencodechicago.org](mailto:info@opencodechicago.org) 
 
-📧 [info@opencodechicago.org](mailto:info@opencodechicago.org)  
+---
 
-Every contribution matters — big or small.
+## ⭐ Support the Project
+
+If you find this project helpful or enjoy contributing, please consider giving us a ⭐ on GitHub!  
+Starring the repo helps increase its visibility, attracts more contributors, and makes your contributions more visible and valuable for your portfolio or employer. Thank you for supporting open source!
+
+---
+
+Every contribution matters — big or small. ❤️  
+Thank you for helping make Open Code Chicago better!
