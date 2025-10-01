@@ -12,6 +12,9 @@ app.use(express.json());
 app.get('/',(req,res)=>{
     res.send("Welcome to Homepage");
 })
-app.use('/api',productRoutes);
+
+// Routes
+app.use('/api/products', productRoutes);
+
 export default app
 
