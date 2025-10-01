@@ -59,6 +59,30 @@ We welcome contributions of all skill levels.
 
 ---
 
+## Get Recognized with the All-Contributors Bot
+We use the [All Contributors Bot](https://allcontributors.org/docs/en/bot/usage) to recognize and celebrate all types of contributions. 
+
+**How to add yourself:**
+1. After your Pull Request is merged, comment on the PR or in a new issue with:
+   ```
+   @all-contributors please add @your-github-username for code, doc, ideas
+   ```
+   - Replace `@your-github-username` with your GitHub handle.
+   - List your contribution types (e.g., `code`, `doc`, `ideas`, `bug`, `review`).
+   - [See all contribution types here.](https://allcontributors.org/docs/en/emoji-key)
+
+2. The bot will create a Pull Request to add you to the contributors table in the README.
+3. A maintainer will review and merge the bot’s PR.
+
+**Example:**
+```
+@all-contributors please add @Alexandrbig1 for code, doc, maintenance, projectManagement
+``` 
+
+If you have questions, ask in your PR or open an issue!
+
+---
+
 ## Guidelines
 - Follow our [Code of Conduct](./CODE_OF_CONDUCT.md)  
 - Use clear, descriptive commit messages  
