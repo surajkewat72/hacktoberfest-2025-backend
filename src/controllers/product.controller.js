@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 import Product from "../models/product.model.js";
 
-
 /**
  * Get all products from the database
  * @route GET /api/products
