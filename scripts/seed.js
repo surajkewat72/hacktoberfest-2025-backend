@@ -28,11 +28,10 @@ async function seedDB() {
     await Product.deleteMany();
     await Product.insertMany(seedProducts);
     console.log("✅ Seed data inserted");
-    process.exit();
   } catch (err) {
     console.error("❌ Error seeding DB", err);
     process.exit(1);
   }
 }
 
-seedDB();
+export default seedDB;
