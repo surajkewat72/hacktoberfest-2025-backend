@@ -8,7 +8,8 @@
     "sizes": ["2lb", "4lb"],
     "new": true,
     "goals": ["Build Muscle", "Muscle Recovery", "Meal Replacement"],
-    "description": "High-quality whey protein for muscle recovery.",
+    "shortDescription": "High-quality whey protein for muscle recovery.",
+    "longDescription": "CoreX Whey Protein is crafted from premium whey protein concentrate and isolate, delivering a fast-absorbing formula that fuels muscle growth and recovery. With a complete amino acid profile, it’s perfect post-workout or as a meal replacement. Each serving mixes smoothly, tastes great, and supports your fitness goals whether you’re building lean mass or maintaining strength.",
     "image": "https://via.placeholder.com/200"
   },
   {
@@ -20,7 +21,8 @@
     "sizes": ["300g", "500g"],
     "new": false,
     "goals": ["Athletic Performance", "Build Muscle", "Strength"],
-    "description": "Boost your performance with pure creatine monohydrate.",
+    "shortDescription": "Boost your performance with pure creatine monohydrate.",
+    "longDescription": "CoreX Creatine contains 100% pure creatine monohydrate, scientifically proven to improve strength, endurance, and recovery. Regular use helps increase muscle size and performance during high-intensity training. With no fillers or flavors, it easily mixes with any beverage. Ideal for athletes and fitness enthusiasts looking for an extra edge.",
     "image": "https://via.placeholder.com/200"
   },
   {
@@ -32,7 +34,8 @@
     "sizes": ["30 servings", "60 servings"],
     "new": true,
     "goals": ["Muscle Recovery", "Intra-Workout", "BCAAs"],
-    "description": "Branched-chain amino acids for muscle recovery.",
+    "shortDescription": "Branched-chain amino acids for muscle recovery.",
+    "longDescription": "CoreX BCAA delivers the essential amino acids leucine, isoleucine, and valine in a 2:1:1 ratio to reduce muscle breakdown, speed recovery, and support lean muscle growth. With refreshing flavors, it’s perfect to sip during workouts or throughout the day to keep muscles fueled and protected.",
     "image": "https://via.placeholder.com/200"
   },
   {
@@ -44,7 +47,8 @@
     "sizes": ["60 capsules"],
     "new": true,
     "goals": ["Weight Loss", "Metabolism", "Energy"],
-    "description": "Thermogenic formula for accelerated fat loss.",
+    "shortDescription": "Thermogenic formula for accelerated fat loss.",
+    "longDescription": "CoreX Fat Burner combines natural thermogenic ingredients with energy boosters to support fat loss, metabolism, and appetite control. Designed to increase calorie burning and focus, it’s an excellent companion for weight management when paired with a balanced diet and exercise routine.",
     "image": "https://via.placeholder.com/200"
   },
   {
@@ -56,7 +60,99 @@
     "sizes": ["60 tablets"],
     "new": true,
     "goals": ["Health & Wellness", "Multivitamins", "Joint Health"],
-    "description": "Complete daily multivitamin for overall health.",
+    "shortDescription": "Complete daily multivitamin for overall health.",
+    "longDescription": "CoreX Multivitamin provides essential vitamins and minerals to support energy, immune function, and overall wellness. Designed for active lifestyles, it helps fill daily nutritional gaps and supports joint, bone, and cardiovascular health.",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "name": "CoreX Amino Surge",
+    "price": 21.99,
+    "category": "Aminos & BCAAs",
+    "flavors": ["Fruit Punch", "Grape"],
+    "sale": 10,
+    "sizes": ["30 servings"],
+    "new": false,
+    "goals": ["BCAAs", "Intra-Workout", "Muscle Recovery"],
+    "shortDescription": "Advanced amino acid blend for intra-workout support.",
+    "longDescription": "CoreX Amino Surge features a comprehensive amino acid blend designed to fuel performance, reduce fatigue, and speed recovery during intense workouts. With electrolytes for hydration and delicious flavors, it’s the perfect training partner.",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "name": "CoreX Garage Sale Protein",
+    "price": 15.99,
+    "category": "Garage Sale",
+    "flavors": ["Chocolate"],
+    "sale": 50,
+    "sizes": ["2lb"],
+    "new": false,
+    "goals": ["Build Muscle", "Meal Replacement"],
+    "shortDescription": "Discounted protein powder for budget muscle building.",
+    "longDescription": "CoreX Garage Sale Protein offers great value without compromising on quality. Ideal for budget-conscious athletes, it provides essential protein for muscle repair and growth, with the same trusted CoreX standard.",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "name": "CoreX Wellness Greens",
+    "price": 29.99,
+    "category": "Health & Wellness",
+    "flavors": ["Berry"],
+    "sale": 0,
+    "sizes": ["30 servings"],
+    "new": true,
+    "goals": ["Health & Wellness", "Multivitamins", "Joint Health"],
+    "shortDescription": "Superfood greens for daily health and joint support.",
+    "longDescription": "CoreX Wellness Greens combines nutrient-dense superfoods, antioxidants, and probiotics to support digestion, immunity, and daily energy. A convenient way to add more greens into your routine, it helps balance nutrition and overall wellness.",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "name": "CoreX Hormone Balance",
+    "price": 34.99,
+    "category": "Hormone Health",
+    "flavors": ["Capsule"],
+    "sale": 0,
+    "sizes": ["60 capsules"],
+    "new": true,
+    "goals": ["Testosterone Booster", "Health & Wellness"],
+    "shortDescription": "Supports healthy hormone levels and testosterone.",
+    "longDescription": "CoreX Hormone Balance is formulated with natural ingredients to support hormone health, energy, and testosterone levels. Perfect for men looking to maintain vitality and performance as part of their active lifestyle.",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "name": "CoreX Isolate Protein",
+    "price": 54.99,
+    "category": "Protein Powder",
+    "flavors": ["Vanilla", "Cookies & Cream"],
+    "sale": 20,
+    "sizes": ["2lb", "5lb"],
+    "new": true,
+    "goals": ["Build Muscle", "Meal Replacement", "Muscle Recovery"],
+    "shortDescription": "Premium isolate protein for lean muscle growth.",
+    "longDescription": "CoreX Isolate Protein is ultra-filtered to deliver maximum protein content with minimal fat and carbs. Perfect for lean muscle building, it digests quickly, mixes easily, and provides a smooth, delicious taste.",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "name": "CoreX Pre-Game",
+    "price": 32.99,
+    "category": "Sports Nutrition",
+    "flavors": ["Blue Raspberry"],
+    "sale": 0,
+    "sizes": ["30 servings"],
+    "new": true,
+    "goals": ["Athletic Performance", "Pre-Workout"],
+    "shortDescription": "High-energy pre-workout for peak athletic performance.",
+    "longDescription": "CoreX Pre-Game is a high-stimulant pre-workout designed to increase focus, endurance, and strength output. With caffeine, beta-alanine, and nitric oxide boosters, it primes your body for intense training sessions.",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "name": "CoreX Slim Burn",
+    "price": 25.99,
+    "category": "Weight Management",
+    "flavors": ["Capsule"],
+    "sale": 15,
+    "sizes": ["60 capsules"],
+    "new": false,
+    "goals": ["Weight Loss", "Metabolism"],
+    "shortDescription": "Thermogenic fat burner for effective weight management.",
+    "longDescription": "CoreX Slim Burn combines thermogenic ingredients with natural energy boosters to help burn fat, curb cravings, and boost metabolism. A safe, effective aid to complement your diet and exercise plan.",
     "image": "https://via.placeholder.com/200"
   }
 ]
