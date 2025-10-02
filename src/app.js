@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import productRoutes from './routes/product.routes.js';
 import seedDB from '../scripts/seed.js';
+import errorHandler from './middleware/error-handler.middleware.js';
 
 const app = express();
 
@@ -15,6 +16,9 @@ app.get('/',(req,res)=>{
 
 // Routes
 app.use('/api/products', productRoutes);
+
+// Middleware
+app.use(errorHandler);
 
 export default app
 

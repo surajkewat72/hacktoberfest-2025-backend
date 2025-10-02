@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import Product from "../models/product.model.js";
+import HttpException from "../utils/exceptions/http.exception.js";
 
 // make user text safe for RegExp
 function escapeRegex(text = "") {
@@ -84,10 +85,11 @@ const getAllProducts = async (req, res) => {
     const products = await Product.find(filter);
     return res.status(200).json(products);
   } catch (error) {
-    console.error("Error fetching products:", error);
-    return res.status(500).json({
-      message: "Internal server error while fetching products",
-      error: error.message,
+    // Handle any database errors
+    console.error('Error fetching products:', error);
+    res.status(500).json({
+      message: 'Internal server error while fetching products',
+      error: error.message
     });
   }
 };
@@ -97,13 +99,13 @@ const getProductById = async(req,res)=>{
     const id = req.params.id;
     if(!mongoose.Types.ObjectId.isValid(id)){
         //checks for validity of the id
-        return res.status(400).json({error: "Invalid ID format"});
+        throw new HttpException(400, "Invalid ID format");
     }
     // fetches the product details if id is valid & exists
     const product = await Product.findById(id);
     if(!product){
         //sends 404 error if product not found
-        return res.status(404).json({message:"Product not found"});
+        throw new HttpException(404, "Product not found");
     }
     return res.json(product);
 }
