@@ -24,6 +24,12 @@ const getAllProducts = async (req, res) => {
     const maxPrice = req.query.maxPrice;
     const search = req.query.search;
 
+    // Pagination
+    let page = Number(req.query.page) || 1;
+    let limit = Number(req.query.limit) || 10;
+    if (page < 1 || isNaN(page)) page = 1;
+    if (limit < 1 || isNaN(limit)) limit = 10;
+
     // build the MongoDB filter step by step
     const filter = {};
 
@@ -43,7 +49,6 @@ const getAllProducts = async (req, res) => {
       }
       if (goalsArray.length > 0) {
         filter.goals = { $in: goalsArray };
-        // If you want "must have ALL goals", use: filter.goals = { $all: goalsArray };
       }
     }
 
@@ -72,7 +77,6 @@ const getAllProducts = async (req, res) => {
     if (search && search.trim() !== "") {
       const safeSearch = escapeRegex(search.trim());
       const pattern = new RegExp(safeSearch, "i");
-      // You have multiple description fields; include them for better matches
       filter.$or = [
         { name: pattern },
         { description: pattern },
@@ -81,9 +85,20 @@ const getAllProducts = async (req, res) => {
       ];
     }
 
-    // If no filters provided, filter is {}, returns all products
-    const products = await Product.find(filter);
-    return res.status(200).json(products);
+    // Pagination logic
+    const total = await Product.countDocuments(filter);
+    const pages = Math.ceil(total / limit) || 1;
+    if (page > pages) page = pages;
+    const products = await Product.find(filter)
+      .skip((page - 1) * limit)
+      .limit(limit);
+
+    return res.status(200).json({
+      products,
+      page,
+      pages,
+      total
+    });
   } catch (error) {
     // Handle any database errors
     console.error('Error fetching products:', error);
