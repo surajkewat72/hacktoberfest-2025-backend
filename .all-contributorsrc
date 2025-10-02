@@ -20,6 +20,15 @@
         "maintenance",
         "projectManagement"
       ]
+    },
+    {
+      "login": "kaushikkanduri",
+      "name": "Kaushik KS",
+      "avatar_url": "https://avatars.githubusercontent.com/u/209061965?v=4",
+      "profile": "https://profilepress.vercel.app/public/aemon-targaryen#projects",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs",
