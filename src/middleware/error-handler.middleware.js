@@ -12,8 +12,8 @@ export default function errorHandler(err, req, res, _next) {
 
   console.error("Error:", err.message);
 
-  let status = err?.statusCode ? err?.statusCode : 500;
-  var response = {
+  const status = err?.statusCode ? err?.statusCode : 500;
+  const response = {
     success: false,
     message: err.message || "Internal Server Error"
   };
