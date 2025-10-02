@@ -2,22 +2,95 @@ import mongoose from "mongoose";
 import Product from "../models/product.model.js";
 import HttpException from "../utils/exceptions/http.exception.js";
 
+// make user text safe for RegExp
+function escapeRegex(text = "") {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 /**
- * Get all products from the database
- * @route GET /api/products
- * @returns {Array} products - Array of product objects or empty array if no products
+ * GET /api/products
+ * Optional query params:
+ *  - category  (e.g. "Protein")
+ *  - goals     (single or CSV, e.g. "Weight Loss" or "Weight Loss,Energy")
+ *  - minPrice  (number)
+ *  - maxPrice  (number)
+ *  - search    (keyword in name/description)
  */
 const getAllProducts = async (req, res) => {
   try {
-    // Fetch all products from the database
-    const products = await Product.find({});
-    
-    // Return products array (will be empty array if no products found)
-    res.status(200).json(products);
+    const category = req.query.category;
+    const goals = req.query.goals;
+    const minPrice = req.query.minPrice;
+    const maxPrice = req.query.maxPrice;
+    const search = req.query.search;
+
+    // build the MongoDB filter step by step
+    const filter = {};
+
+    // 1) category — exact match, ignore case
+    if (category && category.trim() !== "") {
+      const safe = escapeRegex(category.trim());
+      filter.category = { $regex: `^${safe}$`, $options: "i" };
+    }
+
+    // 2) goals — match ANY of the given goals (OR semantics)
+    if (goals && goals.length > 0) {
+      let goalsArray;
+      if (Array.isArray(goals)) {
+        goalsArray = goals;
+      } else {
+        goalsArray = goals.split(",").map((g) => g.trim()).filter(Boolean);
+      }
+      if (goalsArray.length > 0) {
+        filter.goals = { $in: goalsArray };
+        // If you want "must have ALL goals", use: filter.goals = { $all: goalsArray };
+      }
+    }
+
+    // 3) price range
+    let min, max;
+    if (minPrice !== undefined) {
+      const n = Number(minPrice);
+      if (isNaN(n)) return res.status(400).json({ error: "minPrice must be a number" });
+      min = n;
+    }
+    if (maxPrice !== undefined) {
+      const n = Number(maxPrice);
+      if (isNaN(n)) return res.status(400).json({ error: "maxPrice must be a number" });
+      max = n;
+    }
+    if (min !== undefined && max !== undefined && min > max) {
+      return res.status(400).json({ error: "minPrice cannot be greater than maxPrice" });
+    }
+    if (min !== undefined || max !== undefined) {
+      filter.price = {};
+      if (min !== undefined) filter.price.$gte = min;
+      if (max !== undefined) filter.price.$lte = max;
+    }
+
+    // 4) search — keyword in name/description (case-insensitive)
+    if (search && search.trim() !== "") {
+      const safeSearch = escapeRegex(search.trim());
+      const pattern = new RegExp(safeSearch, "i");
+      // You have multiple description fields; include them for better matches
+      filter.$or = [
+        { name: pattern },
+        { description: pattern },
+        { shortDescription: pattern },
+        { longDescription: pattern },
+      ];
+    }
+
+    // If no filters provided, filter is {}, returns all products
+    const products = await Product.find(filter);
+    return res.status(200).json(products);
   } catch (error) {
     // Handle any database errors
     console.error('Error fetching products:', error);
-    throw new HttpException(500, "Internal server error while fetching products");
+    res.status(500).json({
+      message: 'Internal server error while fetching products',
+      error: error.message
+    });
   }
 };
 
