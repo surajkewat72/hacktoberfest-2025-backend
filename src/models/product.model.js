@@ -20,7 +20,9 @@ const productSchema = new mongoose.Schema({
   longDescription: { type: String },
   usageTips: { type: usageTipsSchema },
   quality: { type: [String] },
-  image: { type: String }
+  image: { type: String },
+  rating: { type: Number, default: 4.7 },
+  reviewsCount: { type: Number, default: 0 }
 },
 {
   timestamps: true,
