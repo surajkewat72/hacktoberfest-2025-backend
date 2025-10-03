@@ -4,6 +4,8 @@ import "dotenv/config";
 import Product from "../src/models/product.model.js";
 import { readFile } from "fs/promises";
 import path from "path";
+import dbConnection from "./dbConfig.js";
+
 
 if (!process.env.MONGODB_URI) {
   console.error("❌ MONGODB_URI is missing. Please create a .env file based on .env.example and set your MongoDB connection string.");
@@ -21,17 +23,19 @@ async function getSeedProducts() {
   }
 }
 
-async function seedDB() {
-  try {
-    await mongoose.connect(process.env.MONGODB_URI);
+const seedDB = async()=>{
+  try{
+    await dbConnection();
+    console.log(`Seeding data to database ${mongoose.connection.name}`);
     const seedProducts = await getSeedProducts();
     await Product.deleteMany();
     await Product.insertMany(seedProducts);
-    console.log("✅ Seed data inserted");
-  } catch (err) {
-    console.error("❌ Error seeding DB", err);
+    console.log("Seeding complete.");
+    process.exit(0);
+  }catch (err) {
+    console.error("Error seeding DB", err);
     process.exit(1);
   }
 }
 
-export default seedDB;
+seedDB();
