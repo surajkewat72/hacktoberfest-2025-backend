@@ -102,10 +102,7 @@ const getAllProducts = async (req, res) => {
   } catch (error) {
     // Handle any database errors
     console.error('Error fetching products:', error);
-    res.status(500).json({
-      message: 'Internal server error while fetching products',
-      error: error.message
-    });
+    next(new HttpException(500,'Internal server error while fetching products'));
   }
 };
 
@@ -114,13 +111,13 @@ const getProductById = async(req,res)=>{
     const id = req.params.id;
     if(!mongoose.Types.ObjectId.isValid(id)){
         //checks for validity of the id
-        throw new HttpException(400, "Invalid ID format");
+        next(new HttpException(400, "Invalid ID format"));
     }
     // fetches the product details if id is valid & exists
     const product = await Product.findById(id);
     if(!product){
         //sends 404 error if product not found
-        throw new HttpException(404, "Product not found");
+        next(new HttpException(404, "Product not found"));
     }
     return res.json(product);
 }

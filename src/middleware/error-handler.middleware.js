@@ -8,11 +8,11 @@
  * @param {Response} res - Express response object.
  * @param {Function} _next - Express next middleware function (unused).
  */
-export default function errorHandler(err, req, res, _next) {
+export default function errorHandler(err, req, res, next) {
 
   console.error("Error:", err.message);
 
-  const status = err?.statusCode ? err?.statusCode : 500;
+  const status = err?.statusCode ? err.statusCode : 500;
   const response = {
     success: false,
     message: err.message || "Internal Server Error"

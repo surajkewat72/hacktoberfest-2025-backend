@@ -1,12 +1,12 @@
 import express from 'express';
 import cors from 'cors';
 import productRoutes from './routes/product.routes.js';
-import seedDB from '../scripts/seed.js';
+import dbConnection from '../scripts/dbConfig.js';
 import errorHandler from './middleware/error-handler.middleware.js';
 import notFound from './middleware/notFound.middleware.js'
 const app = express();
 
-seedDB();
+dbConnection();
 app.use(cors());
 app.use(express.json());
 
