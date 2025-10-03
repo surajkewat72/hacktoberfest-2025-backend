@@ -216,6 +216,7 @@ Thanks goes to these wonderful people:
       <td align="center" valign="top" width="14.28%"><a href="https://profilepress.vercel.app/public/aemon-targaryen#projects"><img src="https://avatars.githubusercontent.com/u/209061965?v=4?s=100" width="100px;" alt="Kaushik KS"/><br /><sub><b>Kaushik KS</b></sub></a><br /><a href="https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/commits?author=kaushikkanduri" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/UsamaBinKashif"><img src="https://avatars.githubusercontent.com/u/80617842?v=4?s=100" width="100px;" alt="Usama Ahmed"/><br /><sub><b>Usama Ahmed</b></sub></a><br /><a href="https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/commits?author=UsamaBinKashif" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/deepesh224-ux"><img src="https://avatars.githubusercontent.com/u/185037270?v=4?s=100" width="100px;" alt="Deepesh Dey"/><br /><sub><b>Deepesh Dey</b></sub></a><br /><a href="https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/commits?author=deepesh224-ux" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mbm08"><img src="https://avatars.githubusercontent.com/u/185241615?v=4?s=100" width="100px;" alt="mbm08"/><br /><sub><b>mbm08</b></sub></a><br /><a href="https://github.com/OpenCodeChicago/hacktoberfest-2025-backend/commits?author=mbm08" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>

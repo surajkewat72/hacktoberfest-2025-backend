@@ -47,6 +47,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "mbm08",
+      "name": "mbm08",
+      "avatar_url": "https://avatars.githubusercontent.com/u/185241615?v=4",
+      "profile": "https://github.com/mbm08",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs",
