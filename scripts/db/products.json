@@ -3,7 +3,7 @@
     "name": "CoreX Whey Protein",
     "price": 49.99,
     "category": "Protein",
-    "flavors": ["Chocolate", "Vanilla", "Strawberry"],
+    "flavors": ["Chocolate", "Vanilla", "Strawberries & Cream"],
     "sale": 25,
     "sizes": ["2lb", "4lb"],
     "new": true,
@@ -17,9 +17,10 @@
       "pairWith": "Pair with CoreX Creatine for enhanced endurance, strength, and recovery."
     },
     "quality": ["Non-GMO", "No Artificial Flavors", "Gluten-Free"],
-    "image": "https://via.placeholder.com/200"
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.8,
+    "reviewsCount": 212
   },
-
   {
     "name": "CoreX Creatine",
     "price": 24.99,
@@ -38,9 +39,10 @@
       "pairWith": "Pair with CoreX Whey Protein for a complete strength and recovery stack."
     },
     "quality": ["100% Pure Creatine", "Lab Tested", "No Fillers"],
-    "image": "https://via.placeholder.com/200"
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.6,
+    "reviewsCount": 98
   },
-
   {
     "name": "CoreX BCAA",
     "price": 19.99,
@@ -59,9 +61,10 @@
       "pairWith": "Pair with CoreX Pre-Game for ultimate workout performance."
     },
     "quality": ["Vegan Friendly", "No Artificial Colors", "Sugar-Free"],
-    "image": "https://via.placeholder.com/200"
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.7,
+    "reviewsCount": 124
   },
-
   {
     "name": "CoreX Fat Burner",
     "price": 27.99,
@@ -80,9 +83,10 @@
       "pairWith": "Stack with CoreX Whey Protein to preserve muscle while cutting fat."
     },
     "quality": ["Non-GMO", "Gluten-Free", "No Proprietary Blends"],
-    "image": "https://via.placeholder.com/200"
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.5,
+    "reviewsCount": 67
   },
-
   {
     "name": "CoreX Multivitamin",
     "price": 14.99,
@@ -101,9 +105,10 @@
       "pairWith": "Use with CoreX Wellness Greens for full-spectrum health support."
     },
     "quality": ["No Artificial Colors", "Gluten-Free", "Non-GMO"],
-    "image": "https://via.placeholder.com/200"
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.9,
+    "reviewsCount": 301
   },
-
   {
     "name": "CoreX Amino Surge",
     "price": 21.99,
@@ -122,9 +127,10 @@
       "pairWith": "Pair with CoreX Pre-Game for peak performance and recovery."
     },
     "quality": ["No Sugar Added", "Lab Verified", "Gluten-Free"],
-    "image": "https://via.placeholder.com/200"
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.4,
+    "reviewsCount": 53
   },
-
   {
     "name": "CoreX Garage Sale Protein",
     "price": 15.99,
@@ -143,9 +149,10 @@
       "pairWith": "Pair with CoreX BCAA for a complete recovery stack."
     },
     "quality": ["Budget Friendly", "No Artificial Flavors", "Gluten-Free"],
-    "image": "https://via.placeholder.com/200"
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.3,
+    "reviewsCount": 41
   },
-
   {
     "name": "CoreX Wellness Greens",
     "price": 29.99,
@@ -164,9 +171,10 @@
       "pairWith": "Pair with CoreX Multivitamin for full-spectrum health support."
     },
     "quality": ["Non-GMO", "Vegan Friendly", "No Artificial Colors"],
-    "image": "https://via.placeholder.com/200"
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.7,
+    "reviewsCount": 112
   },
-
   {
     "name": "CoreX Hormone Balance",
     "price": 34.99,
@@ -185,9 +193,10 @@
       "pairWith": "Pair with CoreX Wellness Greens for overall wellness."
     },
     "quality": ["No Artificial Colors", "Gluten-Free", "Non-GMO"],
-    "image": "https://via.placeholder.com/200"
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.5,
+    "reviewsCount": 89
   },
-
   {
     "name": "CoreX Isolate Protein",
     "price": 54.99,
@@ -206,9 +215,10 @@
       "pairWith": "Pair with CoreX Creatine for muscle and strength."
     },
     "quality": ["High Protein", "Low Carb", "Gluten-Free"],
-    "image": "https://via.placeholder.com/200"
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.8,
+    "reviewsCount": 134
   },
-
   {
     "name": "CoreX Pre-Game",
     "price": 32.99,
@@ -227,9 +237,10 @@
       "pairWith": "Pair with CoreX BCAA for best workout results."
     },
     "quality": ["No Artificial Colors", "Lab Tested", "Sugar-Free"],
-    "image": "https://via.placeholder.com/200"
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.6,
+    "reviewsCount": 121
   },
-
   {
     "name": "CoreX Slim Burn",
     "price": 25.99,
@@ -248,6 +259,8 @@
       "pairWith": "Pair with CoreX Whey Protein for best results."
     },
     "quality": ["Non-GMO", "No Proprietary Blends", "Gluten-Free"],
-    "image": "https://via.placeholder.com/200"
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.4,
+    "reviewsCount": 77
   }
 ]
