@@ -19,7 +19,13 @@
     "quality": ["Non-GMO", "No Artificial Flavors", "Gluten-Free"],
     "image": "https://via.placeholder.com/200",
     "rating": 4.8,
-    "reviewsCount": 212
+    "reviewsCount": 212,
+    "collections": [
+      "whey-protein",
+      "build-mass",
+      "meal-replacement",
+      "supplements"
+    ]
   },
   {
     "name": "CoreX Creatine",
@@ -41,7 +47,36 @@
     "quality": ["100% Pure Creatine", "Lab Tested", "No Fillers"],
     "image": "https://via.placeholder.com/200",
     "rating": 4.6,
-    "reviewsCount": 98
+    "reviewsCount": 98,
+    "collections": [
+      "creatine",
+      "athletic-performance",
+      "build-mass",
+      "supplements"
+    ]
+  },
+  {
+    "name": "IGNITE",
+    "price": 34.99,
+    "category": "Pre-Workout",
+    "flavors": ["Citrus Blast", "Blueberry"],
+    "sale": 0,
+    "sizes": ["30 servings"],
+    "new": true,
+    "goals": ["Explosive Energy", "Focus"],
+    "description": "Explosive energy and sharp focus with no crash.",
+    "shortDescription": "Unleash raw power and focus.",
+    "longDescription": "IGNITE is a high-stimulant pre-workout engineered to deliver clean energy, intense focus, and sustained performance without the crash. Ideal for heavy sessions and high-intensity training.",
+    "usageTips": {
+      "when": "20-30 minutes before training",
+      "blend": "Mix one scoop with 8-10oz water",
+      "pairWith": "Hydration products"
+    },
+    "quality": ["Lab Tested", "No Proprietary Blends"],
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.6,
+    "reviewsCount": 45,
+    "collections": ["pre-workout", "athletic-performance", "supplements"]
   },
   {
     "name": "CoreX BCAA",
@@ -63,7 +98,8 @@
     "quality": ["Vegan Friendly", "No Artificial Colors", "Sugar-Free"],
     "image": "https://via.placeholder.com/200",
     "rating": 4.7,
-    "reviewsCount": 124
+    "reviewsCount": 124,
+    "collections": ["bcaas", "intra-workout", "muscle-recovery", "supplements"]
   },
   {
     "name": "CoreX Fat Burner",
@@ -85,7 +121,36 @@
     "quality": ["Non-GMO", "Gluten-Free", "No Proprietary Blends"],
     "image": "https://via.placeholder.com/200",
     "rating": 4.5,
-    "reviewsCount": 67
+    "reviewsCount": 67,
+    "collections": [
+      "fat-burner",
+      "weight-supplements",
+      "health-wellness",
+      "supplements"
+    ]
+  },
+  {
+    "name": "ZEN MODE",
+    "price": 17.99,
+    "category": "Sleep & Recovery",
+    "flavors": ["Capsule"],
+    "sale": 0,
+    "sizes": ["30 capsules"],
+    "new": true,
+    "goals": ["Sleep Support", "Recovery"],
+    "description": "Night-time recovery with magnesium, ashwagandha, and adaptogens.",
+    "shortDescription": "Rest deeper. Recover stronger.",
+    "longDescription": "ZEN MODE is formulated to promote restful sleep and overnight recovery using magnesium, adaptogens, and calming botanicals to support natural sleep cycles.",
+    "usageTips": {
+      "when": "Take 30 minutes before bed",
+      "blend": "Take with water",
+      "pairWith": "Casein for overnight recovery"
+    },
+    "quality": ["Non-Habit Forming"],
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.5,
+    "reviewsCount": 15,
+    "collections": ["health-wellness", "muscle-recovery", "supplements"]
   },
   {
     "name": "CoreX Multivitamin",
@@ -107,12 +172,13 @@
     "quality": ["No Artificial Colors", "Gluten-Free", "Non-GMO"],
     "image": "https://via.placeholder.com/200",
     "rating": 4.9,
-    "reviewsCount": 301
+    "reviewsCount": 301,
+    "collections": ["multivitamins", "health-wellness", "supplements"]
   },
   {
     "name": "CoreX Amino Surge",
     "price": 21.99,
-    "category": "Aminos & BCAAs",
+    "category": "Aminos",
     "flavors": ["Fruit Punch", "Grape"],
     "sale": 10,
     "sizes": ["30 servings"],
@@ -129,7 +195,31 @@
     "quality": ["No Sugar Added", "Lab Verified", "Gluten-Free"],
     "image": "https://via.placeholder.com/200",
     "rating": 4.4,
-    "reviewsCount": 53
+    "reviewsCount": 53,
+    "collections": ["bcaas", "intra-workout", "muscle-recovery", "supplements"]
+  },
+  {
+    "name": "PULSE",
+    "price": 29.99,
+    "category": "Pump Formula",
+    "flavors": ["Watermelon", "Fruit Punch"],
+    "sale": 0,
+    "sizes": ["30 servings"],
+    "new": true,
+    "goals": ["Vascularity", "Pump"],
+    "description": "Nitric oxide booster for maximum vascularity.",
+    "shortDescription": "Feel the surge. Own the pump.",
+    "longDescription": "PULSE enhances blood flow and muscle fullness using clinically dosed nitric oxide precursors and pump agents to maximize vascularity and nutrient delivery.",
+    "usageTips": {
+      "when": "Use pre-training",
+      "blend": "Mix one scoop with water",
+      "pairWith": "Pre-workout for full stack"
+    },
+    "quality": ["Transparent Labeling"],
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.5,
+    "reviewsCount": 21,
+    "collections": ["athletic-performance", "endurance", "supplements"]
   },
   {
     "name": "CoreX Garage Sale Protein",
@@ -151,7 +241,8 @@
     "quality": ["Budget Friendly", "No Artificial Flavors", "Gluten-Free"],
     "image": "https://via.placeholder.com/200",
     "rating": 4.3,
-    "reviewsCount": 41
+    "reviewsCount": 41,
+    "collections": ["garage-sale", "whey-protein", "build-mass", "supplements"]
   },
   {
     "name": "CoreX Wellness Greens",
@@ -173,94 +264,12 @@
     "quality": ["Non-GMO", "Vegan Friendly", "No Artificial Colors"],
     "image": "https://via.placeholder.com/200",
     "rating": 4.7,
-    "reviewsCount": 112
-  },
-  {
-    "name": "CoreX Hormone Balance",
-    "price": 34.99,
-    "category": "Hormone Health",
-    "flavors": ["Capsule"],
-    "sale": 0,
-    "sizes": ["60 capsules"],
-    "new": true,
-    "goals": ["Testosterone Booster", "Health & Wellness"],
-    "description": "Supports healthy hormone levels and testosterone.",
-    "shortDescription": "Supports healthy hormone levels and testosterone.",
-    "longDescription": "CoreX Hormone Balance is formulated with natural ingredients to support hormone health, energy, and testosterone levels. Perfect for men looking to maintain vitality and performance as part of their active lifestyle.",
-    "usageTips": {
-      "when": "Take daily in the morning with food.",
-      "blend": "Consume one capsule with a glass of water.",
-      "pairWith": "Pair with CoreX Wellness Greens for overall wellness."
-    },
-    "quality": ["No Artificial Colors", "Gluten-Free", "Non-GMO"],
-    "image": "https://via.placeholder.com/200",
-    "rating": 4.5,
-    "reviewsCount": 89
-  },
-  {
-    "name": "CoreX Isolate Protein",
-    "price": 54.99,
-    "category": "Protein Powder",
-    "flavors": ["Vanilla", "Cookies & Cream"],
-    "sale": 20,
-    "sizes": ["2lb", "5lb"],
-    "new": true,
-    "goals": ["Build Muscle", "Meal Replacement", "Muscle Recovery"],
-    "description": "Premium isolate protein for lean muscle growth.",
-    "shortDescription": "Premium isolate protein for lean muscle growth.",
-    "longDescription": "CoreX Isolate Protein is ultra-filtered to deliver maximum protein content with minimal fat and carbs. Perfect for lean muscle building, it digests quickly, mixes easily, and provides a smooth, delicious taste.",
-    "usageTips": {
-      "when": "Use post-workout or as a high-protein snack.",
-      "blend": "Mix one scoop into water or milk. Shake or blend for a creamy texture.",
-      "pairWith": "Pair with CoreX Creatine for muscle and strength."
-    },
-    "quality": ["High Protein", "Low Carb", "Gluten-Free"],
-    "image": "https://via.placeholder.com/200",
-    "rating": 4.8,
-    "reviewsCount": 134
-  },
-  {
-    "name": "CoreX Pre-Game",
-    "price": 32.99,
-    "category": "Sports Nutrition",
-    "flavors": ["Blue Raspberry"],
-    "sale": 0,
-    "sizes": ["30 servings"],
-    "new": true,
-    "goals": ["Athletic Performance", "Pre-Workout"],
-    "description": "High-energy pre-workout for peak athletic performance.",
-    "shortDescription": "High-energy pre-workout for peak athletic performance.",
-    "longDescription": "CoreX Pre-Game is a high-stimulant pre-workout designed to increase focus, endurance, and strength output. With caffeine, beta-alanine, and nitric oxide boosters, it primes your body for intense training sessions.",
-    "usageTips": {
-      "when": "Take 20-30 minutes before your workout.",
-      "blend": "Mix one scoop into 8–10oz of cold water. Shake well.",
-      "pairWith": "Pair with CoreX BCAA for best workout results."
-    },
-    "quality": ["No Artificial Colors", "Lab Tested", "Sugar-Free"],
-    "image": "https://via.placeholder.com/200",
-    "rating": 4.6,
-    "reviewsCount": 121
-  },
-  {
-    "name": "CoreX Slim Burn",
-    "price": 25.99,
-    "category": "Weight Management",
-    "flavors": ["Capsule"],
-    "sale": 15,
-    "sizes": ["60 capsules"],
-    "new": false,
-    "goals": ["Weight Loss", "Metabolism"],
-    "description": "Thermogenic fat burner for effective weight management.",
-    "shortDescription": "Thermogenic fat burner for effective weight management.",
-    "longDescription": "CoreX Slim Burn combines thermogenic ingredients with natural energy boosters to help burn fat, curb cravings, and boost metabolism. A safe, effective aid to complement your diet and exercise plan.",
-    "usageTips": {
-      "when": "Take 1–2 capsules in the morning or before exercise.",
-      "blend": "Consume with water. Do not exceed recommended dosage.",
-      "pairWith": "Pair with CoreX Whey Protein for best results."
-    },
-    "quality": ["Non-GMO", "No Proprietary Blends", "Gluten-Free"],
-    "image": "https://via.placeholder.com/200",
-    "rating": 4.4,
-    "reviewsCount": 77
+    "reviewsCount": 112,
+    "collections": [
+      "greens-reds",
+      "health-wellness",
+      "supplements",
+      "multivitamins"
+    ]
   }
 ]
