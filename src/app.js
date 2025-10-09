@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import productRoutes from './routes/product.routes.js';
 import cartRoutes from './routes/cart.routes.js';
+import collectionRoutes from './routes/collection.routes.js';
 import dbConnection from '../scripts/dbConfig.js';
 import errorHandler from './middleware/error-handler.middleware.js';
 import notFound from './middleware/notFound.middleware.js'
@@ -18,6 +19,7 @@ app.get('/',(req,res)=>{
 // Routes
 app.use('/api/products', productRoutes);
 app.use('/api/cart', cartRoutes);
+app.use('/api/collections', collectionRoutes);
 
 // Middleware
 app.use(errorHandler);
