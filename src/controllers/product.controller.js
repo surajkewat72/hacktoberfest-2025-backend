@@ -123,7 +123,7 @@ const getProductById = async (req, res, next) => {
 }
 
 const getProductBySortCategory = async (req, res, next) => {
-  const category = req.params.sort;
+  const sort = req.params.sort;
   const sortOptions = {
     best_selling: { sale: -1 }, // Default
     a_z: { name: 1 },
