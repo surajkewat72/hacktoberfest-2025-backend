@@ -142,3 +142,4 @@ vite.config.ts.timestamp-*
 src/playground-1.mongodb.js
 .env.example.DS_Store
 src/.DS_Store
+.DS_Store
