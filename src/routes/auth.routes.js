@@ -4,9 +4,11 @@ import {
   googleCallback,
   getProfile,
   logout,
-  refreshToken
+  refreshToken,
+  confirmGoogleLink
 } from '../controllers/auth.controller.js';
-import { verifyJWT } from '../config/passport.config.js';
+// use centralized middleware that validates tokenVersion and expiry
+import { authenticateToken } from '../middleware/auth.middleware.js';
 
 const router = express.Router();
 
@@ -15,8 +17,11 @@ router.get('/google', googleAuth);
 router.get('/google/callback', googleCallback);
 
 // Protected routes (require JWT authentication)
-router.get('/profile', verifyJWT, getProfile);
-router.post('/logout', verifyJWT, logout);
-router.post('/refresh', verifyJWT, refreshToken);
+router.get('/profile', authenticateToken, getProfile);
+router.post('/logout', authenticateToken, logout);
+router.post('/refresh', authenticateToken, refreshToken);
+
+// add route to confirm link (no auth required)
+router.post('/confirm-google-link', confirmGoogleLink);
 
 export default router;
