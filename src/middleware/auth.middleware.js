@@ -92,7 +92,7 @@ const optionalAuth = async (req, res, next) => {
         return next();
       }
       req.user = decoded;
-    } catch (err) {
+    } catch {
       // invalid or expired token -> treat as unauthenticated
       req.user = null;
     }

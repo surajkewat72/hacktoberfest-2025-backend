@@ -27,6 +27,7 @@ export const getCollectionProducts = async (req, res, next) => {
 
     return res.status(200).json({ collections: name, products });
   } catch (err) {
+    console.error('Collection controller error (getCollectionProducts):', err);
     next(new HttpException(500, "Failed to fetch collections products"));
   }
 }

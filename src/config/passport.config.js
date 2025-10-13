@@ -3,7 +3,6 @@ import pkg from 'passport-google-oauth20';
 const GoogleStrategy = pkg.Strategy || pkg;
 import User from '../models/user.model.js';
 import jwt from 'jsonwebtoken';
-import crypto from 'crypto';
 import { sendPendingLinkEmail } from '../utils/email.util.js';
 
 // helper to generate JWT (used by controller as well)
@@ -30,7 +29,8 @@ const jwtSecret = process.env.JWT_SECRET || '';
 if (process.env.NODE_ENV !== 'test') {
   // require at least 32 bytes (64 hex chars) for HMAC secrets
   if (typeof jwtSecret !== 'string' || jwtSecret.length < 64) {
-    throw new Error('Weak or missing JWT_SECRET. Use a strong random secret (e.g. `node -e \"console.log(require(\\'crypto\\').randomBytes(64).toString(\\'hex\\'))\"`) and set it in environment variables.');
+    const genCmd = `node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"`;
+    throw new Error(`Weak or missing JWT_SECRET. Use a strong random secret (for example run: ${genCmd}) and set it in environment variables.`);
   }
   // optional: ensure it's not a default placeholder
   if (/replace_|your_|changeme/i.test(jwtSecret)) {
