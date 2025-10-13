@@ -9,9 +9,13 @@ import testRoutes from './routes/test.routes.js';
 import authRoutes from './routes/auth.routes.js';
 import errorHandler from './middleware/error-handler.middleware.js';
 import notFound from './middleware/notFound.middleware.js'
+import cookieParser from 'cookie-parser';
+
 const app = express();
+
 app.use(cors());
 app.use(express.json());
+app.use(cookieParser());
 
 // Initialize Passport
 app.use(passport.initialize());
